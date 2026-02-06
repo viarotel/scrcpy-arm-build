@@ -129,28 +129,10 @@ jobs:
           name: scrcpy-server
           path: release/work/build-server/server/
 
-      - name: Download release-linux-x86_64
-        uses: actions/download-artifact@v4
-        with:
-          name: release-linux-x86_64
-          path: release/output/
-
       - name: Download release-linux-aarch64
         uses: actions/download-artifact@v4
         with:
           name: release-linux-aarch64
-          path: release/output/
-
-      - name: Download release-win32
-        uses: actions/download-artifact@v4
-        with:
-          name: release-win32
-          path: release/output/
-
-      - name: Download release-win64
-        uses: actions/download-artifact@v4
-        with:
-          name: release-win64
           path: release/output/
 
       - name: Package server
